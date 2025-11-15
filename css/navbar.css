@@ -1,0 +1,55 @@
+
+@import url('https://fonts.googleapis.com/css2?family=Nunito:ital,wght@0,200..1000;1,200..1000&display=swap'); 
+
+.navbar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 1rem 2rem;
+  background-color: white;
+  box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+}
+
+.nav-links {
+  list-style: none;
+  display: flex;
+  gap: 20px;
+}
+
+.nav-links a {
+  text-decoration: none;
+  color: #333;
+  font-weight: 500;
+  transition: color 0.3s;
+}
+
+.nav-links a:hover {
+  color: #d81b60;
+}
+.logo{
+    font-size:1.5rem;
+    font-weight:bold;
+    color:#333;
+    transition: transform 0.3s ease;
+}
+.logo:hover {
+    transform: scale(1.1);
+}
+@media screen and (max-width:430px){
+    nav{
+        flex-direction:column;
+        padding: 1rem;
+
+    }
+    .nav-links{
+        flex-direction: column;
+        text-align: center;
+        margin-top: 1rem ;
+       gap:1rem;
+        
+    }
+    
+}
+.nav-links:hover {
+    transform: scale(1.1);
+}
