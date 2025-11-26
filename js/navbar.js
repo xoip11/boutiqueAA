@@ -1,6 +1,4 @@
 let rutaBase = "";
-
-// detecta si estamos dentro de /login/ o /registrarUsuario/
 if (window.location.pathname.includes("/login/") ||
     window.location.pathname.includes("/registrarUsuario/")) {
     rutaBase = "../";
