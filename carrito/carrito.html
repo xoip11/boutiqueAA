@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tu Carrito - Boutique AA</title>
+    
+    <link rel="stylesheet" href="../css/main.css">
+    <link rel="stylesheet" href="../css/navbar.css">
+    <link rel="stylesheet" href="../css/carrito.css">
+</head>
+<body>
+
+    <div id="navbar-container"></div>
+
+    <main class="carrito-main">
+        <h1>Tu Bolsa de Compras</h1>
+
+        <div class="carrito-wrapper">
+            <div id="carrito-items" class="carrito-lista">
+                <p>Cargando tu carrito...</p>
+            </div>
+
+            <div class="carrito-resumen">
+                <h2>Resumen del Pedido</h2>
+                <div class="resumen-fila">
+                    <span>Subtotal</span>
+                    <span id="subtotal-price">$0.00</span>
+                </div>
+                <div class="resumen-fila total">
+                    <span>Total</span>
+                    <span id="total-price">$0.00</span>
+                </div>
+                <button class="btn-checkout" onclick="alert('Funcionalidad de pago en construcción')">PROCEDER AL PAGO</button>
+                <a href="../index.html" class="seguir-comprando">Seguir comprando</a>
+            </div>
+        </div>
+    </main>
+
+    <script src="../js/navbar.js"></script>
+    <script src="../js/carrito.js"></script>
+</body>
+</html>
