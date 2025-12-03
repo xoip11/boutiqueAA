@@ -169,8 +169,8 @@ border:none ;
 border-radius:5px ;
 cursor: pointer;
 }
-.Novedades-card button :hover {
-    background-color: black;
+.Novedades-card button:hover {
+    background-color:black;
 
 }
 #Usuario {
