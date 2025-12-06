@@ -4,7 +4,7 @@ document.addEventListener("DOMContentLoaded", () => {
         window.location.pathname.includes("/login/") ||
         window.location.pathname.includes("/registrarUsuario/") ||
         window.location.pathname.includes("/carrito/") ||
-        window.location.pathname.includes("/ver_todo/")
+        window.location.pathname.includes("/ver todo/")
     ) {
         rutaBase = "../";
     }

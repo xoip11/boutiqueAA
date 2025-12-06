@@ -1,13 +1,5 @@
-let rutaBase = "";
 
-if (window.location.pathname.includes("/login/") ||
-    window.location.pathname.includes("/registrarUsuario/") ||
-    window.location.pathname.includes("/carrito/") ||
-    window.location.pathname.includes("/ver_todo")) { 
-    rutaBase = "../";
-}
-
-fetch(rutaBase + "navbar/navbar.html")
+fetch("/navbar/navbar.html")
   .then(res => {
       if (!res.ok) throw new Error("No se encontró el navbar");
       return res.text();
@@ -21,6 +13,7 @@ fetch(rutaBase + "navbar/navbar.html")
 
     if (hamburger && menu) {
         hamburger.addEventListener('click', () => {
+            console.log("¡CLICK CAPTURADO!");
             hamburger.classList.toggle('active');
             menu.classList.toggle('active');
         });
